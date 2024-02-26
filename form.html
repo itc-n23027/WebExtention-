@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8"/>
+   <title>質問フォーム</title>
+   <link rel="stylesheet" href="css/formreverseLNavigation.css">
+   <style>
+
+      form {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+   </style>
+</head>
+
+<body>
+    <header class="grovalNavigation">
+	    <h1>質問フォーム</h1>
+    </header>
+    <main>
+        <div class="localNavigation">
+		<h2>ページ移動はここから</h2>
+		<h3><p><a href='index.html'>トップページ</a></p>
+                <p><a href='place.html'>場所</a></p>
+                <p><a href='price.html'>品揃え情報</a></p>
+		<p><a href='form.html'>質問フォーム</a></p></h3>
+        </div>
+        <div class="content">
+		<h4>なにか質問があれば以下のフォームまで</h4>	
+            <form action="#" method="post">
+                <label for="name">お名前:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">メールアドレス:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">お問い合わせ内容:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="送信">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
+
